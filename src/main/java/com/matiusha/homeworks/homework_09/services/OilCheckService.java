@@ -2,11 +2,11 @@ package com.matiusha.homeworks.homework_09.classes;
 
 import java.util.List;
 
-public class OilCheck implements Service {
+public class OilCheckService implements Service {
     private String serviceName;
     private double servicePrice;
 
-    public OilCheck(String serviceName, double servicePrice) {
+    public OilCheckService(String serviceName, double servicePrice) {
         this.serviceName = serviceName;
         this.servicePrice = servicePrice;
     }
@@ -21,7 +21,7 @@ public class OilCheck implements Service {
 
     @Override
     public void perform() {
-        System.out.print("Проверка масла");
+        System.out.print("Oil Checked");
     }
 
     @Override

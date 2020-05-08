@@ -2,12 +2,15 @@ package com.matiusha.homeworks.homework_09.classes;
 
 import com.matiusha.homeworks.homework_09.Product;
 
-public class TyresChange implements Service {
+import java.util.List;
+
+public class OilChangeService implements Service {
     private String serviceName;
     private double servicePrice;
     private Product product;
 
-    public TyresChange(String serviceName, double servicePrice, Product product) {
+
+    public OilChangeService(String serviceName, double servicePrice, Product product) {
         this.serviceName = serviceName;
         this.servicePrice = servicePrice;
         this.product = product;
@@ -27,12 +30,12 @@ public class TyresChange implements Service {
 
     @Override
     public void perform() {
-        System.out.print("Замена масла + buy Product(шины + диски)");
+        System.out.printf("Oil Changed");
     }
 
     @Override
     public String toString() {
-        return "TyresChange{" +
+        return "OilChange{" +
                 "serviceName='" + serviceName + '\'' +
                 ", servicePrice=" + servicePrice +
                 ", product=" + product +
